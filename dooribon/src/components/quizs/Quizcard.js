@@ -14,12 +14,8 @@ import '../common/Main.css';
 
 const Question = styled.div`
   text-align : center;
-  margin-top: 30%;
+  margin-top: 25%;
   padding : 0;
-`;
-
-const Spacer = styled.div`
-  height : 4rem;
 `;
 
 const useStyles = makeStyles({
@@ -60,7 +56,6 @@ const QuizCard = ({ match }) => {
 
     useEffect(() => {
         const num = parseInt(match.params.id);
-        console.log(num);
         if (quiz) {
             setQuiz(quiz[num - 1]);    //렌더링 시 질문 설정 (현재 주소 파라미터에서 질문 번호 가져온다.
             setId(num + 1);
@@ -84,7 +79,7 @@ const QuizCard = ({ match }) => {
         <Wrapper>
             <QuizWrapper>
                 <Top />
-            {match.params.id < 10 &&
+                {match.params.id < 10 &&
                 <Question>
                     <Typography className={classes.title}>Q{match.params.id}</Typography>
                     <img src={line}/>
@@ -100,8 +95,8 @@ const QuizCard = ({ match }) => {
                         </Link>
                     ))}
                 </Question>
-            }
-            {match.params.id == 10 &&
+                }
+                {match.params.id == 10 &&
                 <Question>
                     <Typography className={classes.title}>Q{match.params.id}</Typography>
                     <img src={line} />

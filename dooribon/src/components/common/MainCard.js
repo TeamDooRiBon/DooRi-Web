@@ -15,6 +15,10 @@ const MainWrapper = styled.div`
   margin : 0;
   padding : 0;
 `;
+const Spacer = styled.div`
+  height : 4rem;
+`;
+
 
 const useStyles = makeStyles({
     title: {
@@ -63,7 +67,9 @@ const MainCard = ({ history }) => {
                             history.push("/question/1");
                         }}>지금 시작하기!</Button>
                 </MainWrapper>
+              
             </Wrapper>
+            <Spacer />
         </>
     );
 };

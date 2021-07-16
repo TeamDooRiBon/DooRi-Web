@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import DOORI from '../../img/DOORIBON.png';
+import { Link } from 'react-router-dom';
+import score from '../../contents/score';
 
 const Img = styled.img`
     width: 30%;
@@ -12,9 +14,17 @@ const Img = styled.img`
 `;
 
 const Top = () => {
+    const init = () => {
+        score[0].fill(0);
+        score[1].maxIdx = 0;
+        score[1].maxScore = 0;
+    };
+
     return (
         <>
-            <Img src={DOORI} />
+            <Link to={`/`} onClick={() => init()} >
+                <Img src={DOORI} />
+            </Link>
         </>
     );
 };

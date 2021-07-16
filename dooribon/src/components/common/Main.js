@@ -1,6 +1,5 @@
 import React from 'react';
 import MainCard from './MainCard';
-
 const Main = () => {
     return (
         <>

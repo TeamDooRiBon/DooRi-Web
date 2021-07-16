@@ -1,7 +1,7 @@
 import React from 'react';
 import ResultCard from '../components/results/ResultCard';
 
-function result({ match }) {
+const ResultPage = ({ match }) => {
     return (
         <>
             <ResultCard match={match} />
@@ -9,4 +9,4 @@ function result({ match }) {
     );
 }
 
-export default result;
+export default ResultPage;
