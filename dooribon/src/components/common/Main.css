@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+@font-face {
+  font-family: "spoqa-medium";        
+  src: url("../../font/SpoqaHanSansNeo-Medium.otf");
+}
+@font-face {
+  font-family: "spoqa-regular";
+  src: url("../../font/SpoqaHanSansNeo-Regular.otf"); 
+}
